@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Code Snippet Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>Code Snippet Manager</h1>
+
+
+<input 
+id="title"
+placeholder="Snippet title">
+
+
+<select id="language">
+
+<option>JavaScript</option>
+<option>Python</option>
+<option>Java</option>
+<option>HTML</option>
+<option>CSS</option>
+
+</select>
+
+
+
+<textarea 
+id="code"
+placeholder="Paste your code here">
+</textarea>
+
+
+
+<button onclick="saveSnippet()">
+Save Snippet
+</button>
+
+
+
+<input
+id="search"
+placeholder="Search snippets..."
+onkeyup="searchSnippet()">
+
+
+
+<div id="snippets"></div>
+
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
